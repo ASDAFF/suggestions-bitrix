@@ -83,13 +83,13 @@
 
 Скриншоты
 ---------
-![](doc/bitrix-0.png)
-![](doc/bitrix-1.png)
-![](doc/bitrix-2.png)
-![](doc/bitrix-3.png)
-![](doc/bitrix-4.png)
-![](doc/bitrix-5.png)
-![](doc/bitrix-6.png)
-![](doc/bitrix-7.png)
-![](doc/bitrix-8.png)
+![](img/bitrix-0.png)
+![](img/bitrix-1.png)
+![](img/bitrix-2.png)
+![](img/bitrix-3.png)
+![](img/bitrix-4.png)
+![](img/bitrix-5.png)
+![](img/bitrix-6.png)
+![](img/bitrix-7.png)
+![](img/bitrix-8.png)
 
