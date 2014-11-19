@@ -91,5 +91,4 @@
 ![](img/bitrix-5.png)
 ![](img/bitrix-6.png)
 ![](img/bitrix-7.png)
-![](img/bitrix-8.png)
 
