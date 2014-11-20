@@ -33,6 +33,7 @@
 * Клонировать содержимое с помощью git либо скачать слепок репозитория [отсюда] (https://github.com/hflabs/suggestions-bitrix/archive/master.zip).
 * Распаковать.
 * Скопировать папку dadata.suggestions в директорию bitrix/modules/ на сервере (пример ниже).
+
         [root@localhost ~]# git clone https://github.com/hflabs/suggestions-bitrix.git
         Initialized empty Git repository in /root/suggestions-bitrix/.git/
         remote: Counting objects: 26, done.
