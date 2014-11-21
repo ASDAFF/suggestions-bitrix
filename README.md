@@ -14,9 +14,9 @@
 
 Скриншоты
 ---------
-![](img/bitrix-0.png)
-![](img/bitrix-2.png)
-![](img/bitrix-5.png)
+<img src="img/bitrix-0.png" width="32%">
+<img src="img/bitrix-2.png" width="32%">
+<img src="img/bitrix-5.png" width="32%">
 
 Установка из MarketPlace
 ------------------------
