@@ -20,7 +20,7 @@
 
 Установка из MarketPlace
 ------------------------
-В скором времени мы опубликуем наш модуль на Marketplace, и вы сможете установить его оттуда.
+В скором времени мы опубликуем наш модуль на [Marketplace](http://marketplace.1c-bitrix.ru/solutions/dadata.suggestions/), и вы сможете установить его.
 
 Установка из репозитория
 ------------------------
@@ -38,6 +38,7 @@
         Unpacking objects: 100% (26/26), done.
         [root@localhost ~]# cp -r suggestions-bitrix/dadata.suggestions /home/bitrix/www/bitrix/modules/
         [root@localhost ~]# chown -R bitrix.bitrix /home/bitrix/www/bitrix/modules/dadata.suggestions
+* *Если установлен Bitrix в кодировке utf8* - дополнительно скопировать содержимое папки utf8 в bitrix/modules (это перезапишет языковые файлы модуля)
 * Зайти в административную консоль: Вкладка "Администрирование" -> "Marketplace" -> "Установленные решения".
 * В списке решений должен появиться модуль "Подсказки DaData.ru", для подключения модуля необходимо нажать на знак ≡ , в контекстном меню выбрать пункт "установить".
 ![](img/bitrix-install.png)

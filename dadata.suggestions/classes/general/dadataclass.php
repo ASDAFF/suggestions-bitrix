@@ -28,7 +28,7 @@ class CDadataSuggestions
 
 
     /*
-     * Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ñ‹Ð¹ javascript.
+     * Âûâîäèì íåîáõîäèìûé javascript.
      */
     public static function setJS($arErrors = array())
     {
@@ -150,7 +150,7 @@ class CDadataSuggestions
     }
 
     /*
-     * Ð§Ñ‚Ð¾Ð±Ñ‹ Ð½Ð¸Ñ‡ÐµÐ³Ð¾ Ð½Ðµ Ð»Ð¾Ð¼Ð°Ð»Ð¾ÑÑŒ Ð¿Ñ€Ð¸ Ð¾Ð±Ñ„ÑƒÑÐºÐ°Ñ†Ð¸Ð¸.
+     * ×òîáû íè÷åãî íå ëîìàëîñü ïðè îáôóñêàöèè.
      * stdClass Object ([detail] => Zero balance)
      */
     public static function magicFunction($response)

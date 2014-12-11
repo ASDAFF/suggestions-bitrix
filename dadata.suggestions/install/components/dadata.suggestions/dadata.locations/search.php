@@ -5,6 +5,8 @@ define("PUBLIC_AJAX_MODE", true);
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php");
 header('Content-Type: application/x-javascript; charset=' . LANG_CHARSET);
 
+IncludeModuleLangFile(__FILE__);
+
 $arResult = array();
 
 if (\Bitrix\Main\Loader::includeModule('sale')) {
@@ -54,16 +56,16 @@ if (\Bitrix\Main\Loader::includeModule('sale')) {
 
         }
         if (sizeof($arResult) == 0) {
-            // Для городов федерального значения, имеет смысл попробовать еще поискать
-            if ($region == "Москва")
-                $filter["~REGION_NAME"] = "Московская%";
-            if ($region == "Санкт-Петербург")
-                $filter["~REGION_NAME"] = "Ленинградская%";
-            if ($region == "Севастополь")
-                $filter["~REGION_NAME"] = "Крым%";
-            if ($region == "Байконур") {
+            // ��� ������� ������������ ��������, ����� ����� ����������� ��� ��������
+            if ($region == GetMessage("DADATA_SUGGESTIONS_MOSKVA"))
+                $filter["~REGION_NAME"] = GetMessage("DADATA_SUGGESTIONS_MOSKOVSKAA");
+            if ($region == GetMessage("DADATA_SUGGESTIONS_SANKT_PETERBURG"))
+                $filter["~REGION_NAME"] = GetMessage("DADATA_SUGGESTIONS_LENINGRADSKAA");
+            if ($region == GetMessage("DADATA_SUGGESTIONS_SEVASTOPOLQ"))
+                $filter["~REGION_NAME"] = GetMessage("DADATA_SUGGESTIONS_KRYM");
+            if ($region == GetMessage("DADATA_SUGGESTIONS_BAYKONUR")) {
                 unset($filter["~REGION_NAME"]);
-                $filter["~COUNTRY_NAME"] = "Казахстан%";
+                $filter["~COUNTRY_NAME"] = GetMessage("DADATA_SUGGESTIONS_KAZAHSTAN");
             }
 
             $filter["~CITY_NAME"] = $city . "%";

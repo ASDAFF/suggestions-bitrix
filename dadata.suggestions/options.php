@@ -18,7 +18,7 @@ if ($POST_RIGHT >= 'R'):
 
     $arAllOptions = array();
 
-    // РџРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє СЃР°Р№С‚РѕРІ
+    // Получаем список сайтов
     $arSites = array();
 
 
@@ -26,7 +26,7 @@ if ($POST_RIGHT >= 'R'):
     while ($arRes = $rsSites->GetNext()) {
         $arSites[] = array('ID' => $arRes['ID'], 'NAME' => $arRes['NAME']);
     }
-    // РџРѕР»СѓС‡Р°РµРј СЃРІРѕР№СЃС‚РІР° РєРѕРЅС‚СЂР°РіРµРЅС‚РѕРІ
+    // Получаем свойства контрагентов
     $arSaleProps = CDadataSuggestionsSettings::GetSettingsArray();
     $tabControl = new CAdmintabControl('tabControl', array(
         array('DIV' => 'edit1', 'TAB' => GetMessage('MAIN_TAB_SET'), 'ICON' => ''),
