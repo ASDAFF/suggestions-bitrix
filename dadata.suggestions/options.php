@@ -100,7 +100,7 @@ if ($POST_RIGHT >= 'R'):
                                        value="<?= htmlspecialcharsbx(COption::GetOptionString($module_id, 'apikey', "", $arSite['ID'])) ?>">
                             </td>
                         </tr>
-                        <?  foreach ($arSaleProps as $arSaleType)
+                        <? foreach ($arSaleProps as $arSaleType)
                             if (in_array($arSite['ID'], $arSaleType['LIDS'])): ?>
                                 <tr class="heading">
                                     <td colspan="2"><?= $arSaleType['NAME'] ?></td>
@@ -128,7 +128,7 @@ if ($POST_RIGHT >= 'R'):
                                                                 <? endforeach; ?>
                                                             <? else: ?>
                                                                 <option value="">&lt;<?= GetMessage('OPT_PROPS_NO') ?>&gt;</option>
-                                                            <?endif; ?>
+                                                            <? endif; ?>
                                                         </optgroup>
                                                     <? endforeach; ?>
                                                 </select>
@@ -148,7 +148,8 @@ if ($POST_RIGHT >= 'R'):
 
         $tabControl->Buttons();
         ?>
-        <input <? if ($POST_RIGHT < 'W') echo 'disabled="disabled"' ?> type="submit" class="adm-btn-save" name="Update" value="<?= GetMessage('MAIN_SAVE') ?>"
+        <input <? if ($POST_RIGHT < 'W') echo 'disabled="disabled"' ?> type="submit" class="adm-btn-save" name="Update"
+                                                                       value="<?= GetMessage('MAIN_SAVE') ?>"
                                                                        title="<?= GetMessage('MAIN_OPT_SAVE_TITLE') ?>"/>
         <input <? if ($POST_RIGHT < 'W') echo 'disabled="disabled"' ?> type="submit" name="Apply" value="<?= GetMessage('MAIN_OPT_APPLY') ?>"
                                                                        title="<?= GetMessage('MAIN_OPT_APPLY_TITLE') ?>"/>

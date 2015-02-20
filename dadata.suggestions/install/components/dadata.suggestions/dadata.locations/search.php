@@ -43,7 +43,7 @@ if (\Bitrix\Main\Loader::includeModule('sale')) {
             false,
             array("nTopCount" => 10),
             array(
-                "ID", "CITY_ID", "CITY_NAME", "COUNTRY_NAME_LANG", "REGION_NAME_LANG"
+                "ID", "CITY_ID", "CITY_NAME", "COUNTRY_NAME_LANG", "REGION_NAME_LANG", "COUNTRY_ID" , "REGION_ID"
             )
         );
         while ($arCity = $rsLocationsList->GetNext()) {
@@ -51,7 +51,9 @@ if (\Bitrix\Main\Loader::includeModule('sale')) {
                 "ID" => $arCity["ID"],
                 "NAME" => $arCity["CITY_NAME"],
                 "REGION_NAME" => $arCity["REGION_NAME_LANG"],
+                "REGION_ID" => $arCity["REGION_ID"],
                 "COUNTRY_NAME" => $arCity["COUNTRY_NAME_LANG"],
+                "COUNTRY_ID" => $arCity["COUNTRY_ID"],
             );
 
         }
@@ -82,7 +84,7 @@ if (\Bitrix\Main\Loader::includeModule('sale')) {
                 false,
                 array("nTopCount" => 10),
                 array(
-                    "ID", "CITY_ID", "CITY_NAME", "COUNTRY_NAME_LANG", "REGION_NAME_LANG"
+                    "ID", "CITY_ID", "CITY_NAME", "COUNTRY_NAME_LANG", "REGION_NAME_LANG", "COUNTRY_ID", "REGION_ID"
                 )
             );
             while ($arCity = $rsLocationsList->GetNext()) {
@@ -90,7 +92,9 @@ if (\Bitrix\Main\Loader::includeModule('sale')) {
                     "ID" => $arCity["ID"],
                     "NAME" => $arCity["CITY_NAME"],
                     "REGION_NAME" => $arCity["REGION_NAME_LANG"],
+                    "REGION_ID" => $arCity["REGION_ID"],
                     "COUNTRY_NAME" => $arCity["COUNTRY_NAME_LANG"],
+                    "COUNTRY_ID" => $arCity["COUNTRY_ID"],
                 );
 
             }
